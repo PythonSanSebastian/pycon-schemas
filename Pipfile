@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jsonschema = "==3.1.1"
+
+[dev-packages]
+flake8 = "*"
+flake8-bugbear = "*"
+autopep8 = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-xdist = "*"
+pytest-only = "*"
+watchdog = "*"
+mypy = "*"
+isort = "*"
+tox = ">=3.13.2"
+coverage = "*"
+wily = "*"
+jsonschema = "==3.0.2"
+pyclean-py = "*"
+pytest-mock = "*"
+rope = "*"
+twine = "*"
+pydocstyle = "*"
+tox-pipenv-install = "*"
