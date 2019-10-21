@@ -1,6 +1,6 @@
 .PHONY: help clean clean-pyc clean-build list test test-dbg test-cov test-all coverage docs release sdist install install-dev install-ci lint mypy isort isort-check
 
-project-name = pycon-schemas
+project-name = pycon_schemas
 
 version-var := "__version__ = "
 version-string := $(shell grep $(version-var) $(project-name)/version.py)
