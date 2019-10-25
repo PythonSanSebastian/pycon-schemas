@@ -1,5 +1,4 @@
 import pytest
-from jsonschema import validate
 
 from pycon_schemas import speaker_schema
 

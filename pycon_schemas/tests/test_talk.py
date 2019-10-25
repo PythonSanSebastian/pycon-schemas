@@ -1,8 +1,4 @@
-import os
-import json
-
 import pytest
-from jsonschema import validate
 
 from pycon_schemas import talk_schema
 
