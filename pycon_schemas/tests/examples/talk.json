@@ -19,13 +19,6 @@
   "do_not_record": false,
   "is_featured": true,
   "content_locale": "en",
-  "slot": {
-    "room": {
-      "en": "Track 1 (Mitxelena)"
-    },
-    "start": "2019-09-05T10:30:00Z",
-    "end": "2019-09-05T11:00:00Z"
-  },
   "image": null,
   "project_homepage": null,
   "resources": [],

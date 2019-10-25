@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://pycon.org/sponsor.json",
+  "title": "Sponsor",
+  "description": "A schema for a public view of a sponsor",
+  "type": "object",
+  "required": [
+    "name",
+    "logo"
+  ],
+  "properties": {
+    "name": {
+      "description": "Full name of the company",
+      "type": "string",
+      "examples": [
+        "Python Conference"
+      ]
+    },
+    "shortName": {
+      "description": "Short name of the company",
+      "type": "string",
+      "examples": [
+        "PyCon"
+      ]
+    },
+    "description": {
+      "description": "A description of the company",
+      "type": "string",
+      "examples": [
+        "Super cool company"
+      ]
+    },
+    "url": {
+      "description": "The sponsors website",
+      "type": "string",
+      "examples": [
+        "https://www.pycon.org"
+      ]
+    },
+    "logo": {
+      "description": "Local path or URL to the logo file",
+      "type": "string",
+      "examples": [
+        "static/pycon_logo.png",
+        "https://www.pycon.org/static/logo.png"
+      ]
+    }
+  }
+}
