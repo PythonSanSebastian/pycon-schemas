@@ -18,7 +18,6 @@ before_script:
 - "./cc-test-reporter before-build"
 script:
 - tox -e lint
-- tox -e doclint
 - tox -e isort
 - tox -e mypy
 - tox -e tests
