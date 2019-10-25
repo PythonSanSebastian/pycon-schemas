@@ -1,5 +1,8 @@
 # pycon-schemas
 
+[![Build Status](https://travis-ci.org/PythonSanSebastian/pycon-schemas.svg?branch=master)](https://travis-ci.org/PythonSanSebastian/pycon-schemas)
+
+
 ## How to collaborate
 
 This project uses [pipenv](https://pipenv.readthedocs.io) to manage its dependencies
