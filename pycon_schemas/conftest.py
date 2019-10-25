@@ -1,8 +1,8 @@
 import os
 import json
-import pytest
 
-from jsonschema import Draft7Validator, RefResolver
+import pytest
+from jsonschema import RefResolver, Draft7Validator
 
 import pycon_schemas
 

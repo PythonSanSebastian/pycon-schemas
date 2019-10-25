@@ -1,7 +1,6 @@
-from jsonschema import Draft7Validator, RefResolver
+from jsonschema import RefResolver, Draft7Validator
 
 from .reader import schemas_path
-
 
 pycon_schema_resolver = RefResolver('file://' + schemas_path(), None)
 
