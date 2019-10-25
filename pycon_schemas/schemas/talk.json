@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://pycon.org/talk.json",
-  "description": "A schema for Talks",
   "title": "Talk",
+  "description": "A schema for a public view of a talk",
   "type": "object",
   "required": [
     "title"

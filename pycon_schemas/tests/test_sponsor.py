@@ -14,5 +14,5 @@ class TestSponsorSchema:
     def test_sponsor_schema_check(self, check_schema):
         check_schema(sponsor_schema)
 
-    def test_sponsor_example_valid(self, sponsor_example):
-        validate(instance=sponsor_example, schema=sponsor_schema)
+    def test_sponsor_example_valid(self, validator, sponsor_example):
+        validator.validate(instance=sponsor_example, schema=sponsor_schema)

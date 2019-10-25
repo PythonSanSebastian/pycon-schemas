@@ -17,5 +17,5 @@ class TestTalkSchema:
     def test_talk_schema_check(self, check_schema):
         check_schema(talk_schema)
 
-    def test_talk_example_valid(self, talk_example):
-        validate(instance=talk_example, schema=talk_schema)
+    def test_talk_example_valid(self, validator, talk_example):
+        validator.validate(instance=talk_example, schema=talk_schema)

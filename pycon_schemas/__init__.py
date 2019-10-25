@@ -1,11 +1,10 @@
 import json
 import os
 
-from .reader import read_schema
+from .reader import get_schema
 
 
-_schemas_path = os.path.join(os.path.dirname(__file__), 'schemas')
-
-sponsor_schema = read_schema(os.path.join(_schemas_path, 'sponsor.json'))
-sponsor_list_schema = read_schema(os.path.join(_schemas_path, 'sponsor_list.json'))
-talk_schema = read_schema(os.path.join(_schemas_path, 'talk.json'))
+sponsor_schema = get_schema('sponsor')
+sponsorships_schema = get_schema('sponsorships')
+talk_schema = get_schema('talk')
+submission_schema = get_schema('submission')
