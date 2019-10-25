@@ -59,6 +59,9 @@ clean-caches:
 	rm -rf .tox
 	rm -rf .pytest_cache
 
+testloop:
+	pytest --color=yes -s -f $(project-name)
+
 lint:
 	tox -e lint
 
