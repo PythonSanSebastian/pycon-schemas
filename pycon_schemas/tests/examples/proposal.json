@@ -1,0 +1,29 @@
+{
+  "code": "R3TJLP",
+  "authors": [
+    {
+      "code": "UZVQTV",
+      "name": "Jean",
+      "biography": "Jean is a great person"
+    }
+  ],
+  "title": "Inside NumPy: preparing for the next decade",
+  "submission_type": "Talk (long)",
+  "track": null,
+  "state": "confirmed",
+  "abstract": "A talk abstract.",
+  "tweet": null,
+  "description": "A great long talk.",
+  "duration": "00:30",
+  "slot_count": 1,
+  "do_not_record": false,
+  "is_featured": true,
+  "content_locale": "en",
+  "image": null,
+  "project_homepage": null,
+  "resources": [],
+  "domains": [],
+  "python_skill_level": null,
+  "domain_knowledge": null,
+  "created": "2019-04-11T15:39:29.993524+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://pycon.org/proposal.json",
+  "title": "Proposal",
+  "description": "A schema for an organizers view of a talk/training/poster proposal",
+  "type": "object",
+  "required": [
+    "presentation"
+  ],
+  "properties": {
+    "presentation": {
+      "type": "object",
+      "$ref": "participant.json"
+    },
+    "long_abstract": {
+      "description": "Long abstract of the proposal",
+      "type": "string",
+      "examples": [
+        "Introduction to jsonschema"
+      ]
+    }
+  }
+}

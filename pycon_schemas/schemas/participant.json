@@ -2,45 +2,24 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://pycon.org/participant.json",
   "title": "Participant",
-  "description": "A schema for an organizers view of a conference participant",
+  "description": "A schema for a public view of a participant",
   "type": "object",
   "required": [
+    "name"
   ],
   "properties": {
-    "code": {
-      "$id": "#/properties/code",
-      "type": "string",
-      "title": "The Code Schema",
-      "default": "",
-      "examples": [
-        "UZVQTV"
-      ],
-      "pattern": "^(.*)$"
-    },
     "name": {
-      "$id": "#/properties/name",
       "type": "string",
-      "title": "The Name Schema",
+      "title": "The participant's full name",
       "default": "",
       "examples": [
         "Jean Doe"
       ],
       "pattern": "^(.*)$"
     },
-    "email": {
-      "$id": "#/properties/email",
-      "type": "string",
-      "title": "The Email Schema",
-      "default": "",
-      "examples": [
-        "someone@pycon.com"
-      ],
-      "pattern": "^(.*)$"
-    },
     "biography": {
-      "$id": "#/properties/biography",
       "type": "string",
-      "title": "The Biography Schema",
+      "title": "The participant's short biography",
       "default": "",
       "examples": [
         "Jean is a great person"
@@ -48,63 +27,38 @@
       "pattern": "^(.*)$"
     },
     "homepage": {
-      "$id": "#/properties/homepage",
-      "type": "null",
-      "title": "The Homepage Schema",
-      "default": null,
+      "type": "string",
+      "title": "The participant's home page URL",
+      "default": "",
       "examples": [
-        null
-      ]
+        ""
+      ],
+      "pattern": "^http[s]?://(.*)$"
     },
     "profile_picture": {
-      "$id": "#/properties/profile_picture",
-      "type": "null",
-      "title": "The Profile_picture Schema",
-      "default": null,
+      "type": "string",
+      "title": "The path or url to a profile image",
+      "default": "",
       "examples": [
-        null
-      ]
-    },
-    "job_position": {
-      "$id": "#/properties/job_position",
-      "type": "null",
-      "title": "The Job_position Schema",
-      "default": null,
-      "examples": [
-        null
+        "static/profiles/participant.png"
       ]
     },
     "affiliation": {
-      "$id": "#/properties/affiliation",
-      "type": "null",
-      "title": "The Affiliation Schema",
-      "default": null,
+      "type": "string",
+      "title": "The participant's affiliation",
+      "default": "",
       "examples": [
-        null
+        "Amazing Company Ltd."
       ]
     },
     "twitter": {
-      "$id": "#/properties/twitter",
       "type": "null",
-      "title": "The Twitter Schema",
-      "default": null,
+      "title": "The participant's twitter handle",
+      "default": "string",
       "examples": [
-        null
-      ]
-    },
-    "gender": {
-      "$id": "#/properties/gender",
-      "type": "null",
-      "title": "The Gender Schema",
-      "default": null,
-      "examples": [
-        null
-      ]
-    },
-    "languages": {
-      "$id": "#/properties/languages",
-      "type": "array",
-      "title": "The Languages Schema"
+        "@johndoe"
+      ],
+      "pattern": "^@(.*)$"
     }
   }
 }

@@ -2,9 +2,10 @@ import os
 import json
 
 import pytest
-from jsonschema import RefResolver, Draft7Validator
+from jsonschema import Draft7Validator
 
 import pycon_schemas
+from pycon_schemas.validator import PyconSchemaValidator
 
 
 @pytest.fixture
@@ -35,13 +36,8 @@ def check_schema():
 @pytest.fixture
 def validator(schemas_path):
     class JsonSchemaValidator:
-
-        def __init__(self, resolver):
-            self.resolver = resolver
-
         def validate(self, instance, schema):
-            validator = Draft7Validator(schema=schema, resolver=self.resolver)
+            validator = PyconSchemaValidator(schema=schema)
             return validator.validate(instance)
 
-    resolver = RefResolver('file://' + schemas_path, None)
-    return JsonSchemaValidator(resolver)
+    return JsonSchemaValidator()

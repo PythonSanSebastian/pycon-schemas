@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://pycon.org/sponsorship.json",
+  "title": "Sponsorship",
+  "description": "A schema for a public view of one group of companies with the same sponsorship level",
+  "type": "object",
+  "required": ["level", "sponsors"],
+  "properties": {
+    "level": {
+      "description": "The type of the sponsorship of the companies in this group",
+      "type": "string",
+      "examples": [
+        "Gold sponsors"
+      ]
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "$ref": "sponsor.json"
+      }
+    }
+  }
+}

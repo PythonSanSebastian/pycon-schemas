@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://pycon.org/participant_contact.json",
+  "title": "ParticipantContact",
+  "description": "A schema for a public view of a participant",
+  "type": "object",
+  "required": [
+    "person",
+    "email"
+  ],
+  "properties": {
+    "person": {
+      "type": "object",
+      "$ref": "participant.json"
+    },
+    "email": {
+      "type": "string",
+      "title": "The participant's email address",
+      "default": "",
+      "examples": [
+        "johndoe@company.com"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "address": {
+      "type": "string",
+      "title": "The participant's billing address",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(.*)$"
+    },
+    "phone_number": {
+      "type": "string",
+      "title": "The participant's telephone number",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
+
